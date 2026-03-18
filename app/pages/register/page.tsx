@@ -10,7 +10,7 @@ const page = () => {
         <h3 className="text-3xl capitalize text-[#0E2F5E] text-center md:text-left font-bold">
           sign Up
         </h3>
-        <p className="pt-2 pb-4 text-xl text-[#5A5C78]">
+        <p className="pt-2 pb-4 text-xl text-[#5A5C78] text-center md:text-left">
           Input your credentials to login into your account.
         </p>
         <form className="w-full grid grid-cols-2 justify-between gap-2">
