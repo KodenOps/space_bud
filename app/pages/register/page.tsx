@@ -5,7 +5,7 @@ const page = () => {
   return (
     <section className="md:flex items-top md:pl-4 py-2 h-screen">
       <SideView />
-      <div className="right flex-3 md:pt-14 pt-10 px-20 overflow-y-auto h-full">
+      <div className="right md:flex-3 flex-1 md:pt-14 pt-10 md:px-20 px-6 overflow-y-auto h-full">
         {" "}
         <h3 className="text-3xl capitalize text-[#0E2F5E] text-center md:text-left font-bold">
           sign Up

@@ -8,9 +8,9 @@ import ReviewBar from "./component/ReviewBar";
 
 const page = () => {
   return (
-    <section className="flex items-top pl-4 py-2 h-screen">
+    <section className="flex items-top md:pl-4 py-2 h-screen">
       {/* <NavBar/> */}
-      <div className="left flex-3 md:flex hidden gradientbg rounded-sm px-4 flex  flex-col py-4 justify-between items-center h-full">
+      <div className="left md:flex-3 flex-1 md:flex hidden gradientbg rounded-sm px-4 flex  flex-col py-4 justify-between items-center h-full">
         <div className="titleText px-4 pt-4">
           <Image src={mylogo} alt="Logo" width={80} />
           <h3 className="mt-4 text-white font-bold text-3xl  font-noto text-left leading-relaxed">
@@ -43,7 +43,7 @@ const page = () => {
         <ReviewBar />
       </div>
       {/* sign in form */}
-      <div className="right flex-3 md:pt-14 pt-10 px-20 ">
+      <div className="right md:flex-3 flex-1 md:pt-14 pt-10 md:px-20 px-6 overflow-y-auto h-full">
         <h3 className="text-3xl capitalize text-[#0E2F5E] text-center md:text-left  font-bold">
           sign In
         </h3>
@@ -94,7 +94,7 @@ const page = () => {
             Sign in With Facebook{" "}
           </button>
         </div>
-        <h3 className="text-center mt-8">
+        <h3 className="text-center mt-8 pb-10">
           New to Space Bud?{" "}
           <a href="/pages/register" className="font-bold text-[#0D2C5D]">
             Sign Up Now
