@@ -1,12 +1,17 @@
 import SideView from "@/app/component/SideView";
+import Image from "next/image";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
+import mylogo from "@/public/logo_black.svg";
+
 const page = () => {
   return (
     <section className="md:flex items-top md:pl-4 py-2 h-screen">
       <SideView />
-      <div className="right md:flex-3 flex-1 md:pt-14 pt-10 md:px-20 px-6 overflow-y-auto h-full">
-        {" "}
+      <div className="right md:flex-3 flex-1 md:pt-14  py-2 md:px-20 px-6 overflow-y-auto h-full">
+        <div className="w-full flex justify-center items-center md:hidden">
+          <Image src={mylogo} alt="Logo" width={80} />
+        </div>
         <h3 className="text-3xl capitalize text-[#0E2F5E] text-center md:text-left font-bold">
           sign Up
         </h3>
