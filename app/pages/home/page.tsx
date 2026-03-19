@@ -19,7 +19,7 @@ type Goal = {
 const Page = () => {
   // ✅ Independent goals state
   const [goals, setGoals] = useState<Goal[]>([
-    { name: "Squat", value: 60 },
+    { name: "Squat", value: 80 },
     { name: "Run", value: 20 },
     { name: "Pushup", value: 8 },
   ]);
@@ -53,7 +53,7 @@ const Page = () => {
             <Image
               src={mylove}
               alt="mylove_image"
-              className="w-full h-full object-contain i"
+              className="w-full h-full object-contain "
             />
           </div>
 
