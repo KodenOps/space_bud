@@ -3,7 +3,7 @@
 import SideNav from "@/app/component/SideNav";
 import Title from "@/app/component/Title";
 import Image from "next/image";
-import mylove from "@/public/avatar02.png";
+import mylove from "@/public/image.png";
 
 import { MdOutlineAddLink } from "react-icons/md";
 import { RxCaretRight } from "react-icons/rx";
