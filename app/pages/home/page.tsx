@@ -37,7 +37,7 @@ const Page = () => {
   };
 
   return (
-    <section className="mainpage_home flex">
+    <section className="mainpage_home flex w-full">
       <SideNav />
 
       <div className="right md:flex-4 pt-8 px-4 w-full">
@@ -48,21 +48,21 @@ const Page = () => {
         <Title title="Top Moments" />
 
         {/* Top Section */}
-        <div className="top flex flex-wrap justify-between h-[150px] w-full p-2 gap-2">
-          <div className="bg-white rounded-sm flex  justify-center items-center h-full shadow-md hover:-translate-y-2 duration-500 cursor-pointer border border-[#c4c4c4]">
+        <div className="top grid md:grid-cols-5 grid-cols-2 w-full md:p-2  gap-4">
+          <div className="bg-white rounded-sm flex md:flex-1 flex-2  justify-center items-center h-full shadow-md hover:-translate-y-2 duration-500 cursor-pointer border border-[#c4c4c4] md:col-span-0 col-span-2">
             <Image
               src={mylove}
               alt="mylove_image"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain i"
             />
           </div>
 
-          <div className="daysTogether p-4 flex-1 relative">
+          <div className="daysTogether ">
             <h2 className="headers">1000</h2>
             <p>Days Together</p>
           </div>
 
-          <div className="daysTogether p-4 flex-1 relative">
+          <div className="daysTogether ">
             <span className="absolute top-4 right-4">
               <MdOutlineAddLink
                 size={30}
@@ -74,7 +74,7 @@ const Page = () => {
             <p>Anniversary Date</p>
           </div>
 
-          <div className="daysTogether p-4 flex-1 relative">
+          <div className="daysTogether ">
             <span className="absolute top-4 right-4">
               <MdOutlineAddLink
                 size={30}
@@ -86,68 +86,67 @@ const Page = () => {
             <p>Partner's Birthday</p>
           </div>
 
-          <div className="daysTogether p-4 flex-1">
+          <div className="daysTogether p-4 md:flex-1 flex-2">
             <h2 className="headers">1000</h2>
             <p>Days</p>
           </div>
+        </div>
+        {/* sdfg */}
+        {/* Goals Section */}
+        <Title title="My Menu" />
+        <div className="mymenu md:flex gap-4 flex-1 flex-wrap">
+          <div className="goalOverview p-4 flex-1 shadow-sm">
+            <h3 className="text-md font-medium text-[#0D2C5D] ">
+              Goal Overview
+            </h3>
+            <p className="text-sm text-[#5A5C78] ">
+              See how you are doing with your goals
+            </p>
 
-          <Title title="My Menu" />
+            <div className="flex flex-wrap justify-around items-center gap-6 mt-4">
+              {goals.map((goal, index) => (
+                <div
+                  key={goal.name}
+                  className="flex flex-col items-center gap-2"
+                >
+                  <h4 className="font-medium">{goal.name}</h4>
 
-          {/* Goals Section */}
-          <div className="mymenu md:flex gap-4 flex-1 flex-wrap">
-            <div className="goalOverview p-4 flex-1 shadow-sm">
-              <h3 className="text-md font-medium text-[#0D2C5D] ">
-                Goal Overview
-              </h3>
-              <p className="text-sm text-[#5A5C78] ">
-                See how you are doing with your goals
-              </p>
+                  {/* Gauge */}
+                  <Gauge
+                    width={120}
+                    height={120}
+                    value={goal.value}
+                    cornerRadius="50%"
+                    sx={(theme) => {
+                      const color = getGaugeColor(goal.value);
 
-              <div className="flex flex-wrap justify-around items-center gap-6 mt-4">
-                {goals.map((goal, index) => (
-                  <div
-                    key={goal.name}
-                    className="flex flex-col items-center gap-2"
-                  >
-                    <h4 className="font-medium">{goal.name}</h4>
-
-                    {/* Gauge */}
-                    <Gauge
-                      width={120}
-                      height={120}
-                      value={goal.value}
-                      cornerRadius="50%"
-                      sx={(theme) => {
-                        const color = getGaugeColor(goal.value);
-
-                        return {
-                          [`& .${gaugeClasses.valueText}`]: {
-                            fontSize: 20,
-                          },
-                          [`& .${gaugeClasses.valueArc}`]: {
-                            fill: color, // ✅ dynamic color
-                          },
-                          [`& .${gaugeClasses.referenceArc}`]: {
-                            fill: theme.palette.text.disabled,
-                          },
-                        };
-                      }}
-                      text={({ value }) => `${value}%`}
-                    />
-                  </div>
-                ))}
-              </div>
+                      return {
+                        [`& .${gaugeClasses.valueText}`]: {
+                          fontSize: 20,
+                        },
+                        [`& .${gaugeClasses.valueArc}`]: {
+                          fill: color, // ✅ dynamic color
+                        },
+                        [`& .${gaugeClasses.referenceArc}`]: {
+                          fill: theme.palette.text.disabled,
+                        },
+                      };
+                    }}
+                    text={({ value }) => `${value}%`}
+                  />
+                </div>
+              ))}
             </div>
+          </div>
 
-            {/* Secondary Card */}
-            <div className="goalOverview p-4 flex-1 shadow-sm">
-              <h3 className="text-md font-medium text-[#0D2C5D]">
-                Goal Overview
-              </h3>
-              <p className="text-sm text-[#5A5C78]">
-                See how you are doing with your goals
-              </p>
-            </div>
+          {/* Secondary Card */}
+          <div className="goalOverview p-4 flex-1 shadow-sm">
+            <h3 className="text-md font-medium text-[#0D2C5D]">
+              Goal Overview
+            </h3>
+            <p className="text-sm text-[#5A5C78]">
+              See how you are doing with your goals
+            </p>
           </div>
         </div>
       </div>

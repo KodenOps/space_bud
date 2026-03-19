@@ -32,7 +32,7 @@ form label {
   @apply text-sm font-medium text-[#0E2F5E] md:block hidden;
 }
 .top .daysTogether {
-  @apply md:p-4 p-2 text-center flex flex-col justify-center items-center mb-4 h-full bg-white  shadow-sm hover:translate-y-[-10px] duration-500 rounded-md cursor-pointer md:w-auto w-[50%];
+  @apply md:p-4 p-2 text-center flex flex-col justify-center items-center  h-full bg-white  shadow-sm hover:translate-y-[-10px] duration-500 rounded-md cursor-pointer md:w-auto w-[50%] p-4 md:flex-1 flex-2 relative;
 }
 .daysTogether .headers {
   @apply md:text-4xl text-xl font-bold text-[#0D2C5D];
