@@ -40,7 +40,7 @@ const Page = () => {
     <section className="mainpage_home flex w-full">
       <SideNav />
 
-      <div className="right md:flex-4 pt-8 px-4 w-full">
+      <div className="right md:flex-4 pt-8 px-4 w-full ">
         {/* Header */}
         <p className="text-xl font-medium">Hello, Rejoice</p>
         <p className="text-lg">Welcome to your Home...Literally</p>
@@ -49,12 +49,15 @@ const Page = () => {
 
         {/* Top Section */}
         <div className="top grid md:grid-cols-5 grid-cols-2 w-full md:p-2  gap-4">
-          <div className="bg-white rounded-sm flex md:flex-1 flex-2  justify-center items-center h-full shadow-md hover:-translate-y-2 duration-500 cursor-pointer border border-[#c4c4c4] md:col-span-0 col-span-2">
+          <div className="bg-white rounded-sm flex md:flex-1 flex-2  justify-center md:h-[150px] h-[250px] items-center shadow-md hover:-translate-y-2 duration-500 cursor-pointer border border-[#c4c4c4] md:col-span-1 col-span-2 relative">
             <Image
               src={mylove}
               alt="mylove_image"
-              className="w-full h-full object-contain "
+              className="w-full h-full object-cover "
             />
+            <p className="absolute text-xl font-bold bg-[#0D2C5D99] h-full w-full flex items-center justify-center text-white ">
+              Image of the Day
+            </p>
           </div>
 
           <div className="daysTogether ">
