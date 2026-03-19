@@ -42,7 +42,7 @@ const Page = () => {
 
       <div className="right md:flex-4 pt-8 px-4 w-full ">
         {/* Header */}
-        <p className="text-xl font-medium">Hello, Rejoice</p>
+        <p className="text-2xl font-bold text-[#0D2C5D]">Hello, Rejoice</p>
         <p className="text-lg">Welcome to your Home...Literally</p>
 
         <Title title="Top Moments" />
