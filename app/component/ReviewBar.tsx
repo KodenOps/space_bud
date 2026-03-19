@@ -7,7 +7,7 @@ const ReviewBar = () => {
 
   return (
     <div className="review w-full py-8 bg-[#1B3F7A] px-4 rounded-sm">
-      <p className="text-white text-[15px] mb-4">
+      <p className="text-white text-sm mb-4">
         <MdFormatQuote className="inline" size={24} color="#6AF1F1" />
         {randomReview.review}
         <MdFormatQuote className="inline" size={30} color="#6AF1F1" />

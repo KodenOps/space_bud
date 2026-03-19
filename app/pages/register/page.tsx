@@ -6,7 +6,7 @@ import mylogo from "@/public/logo_black.svg";
 
 const page = () => {
   return (
-    <section className="md:flex items-top md:pl-4 py-2 h-screen">
+    <section className="mainpage">
       <SideView />
       <div className="right md:flex-3 flex-1 md:pt-14  py-2 md:px-20 px-6 overflow-y-auto h-full">
         <div className="w-full flex justify-center items-center md:hidden">
@@ -135,14 +135,17 @@ const page = () => {
           <div className="flex-1 border-t border-gray-400"></div>
         </div>
         <div className="buttonSocial flex flex-wrap items-center gap-4 mt-8 justify-center">
-          <button className="w-full py-4 border-[1px] border-gray-400 rounded-md flex items-center justify-center gap-2">
+          <a
+            href="/pages/home"
+            className="w-full py-4 border-[1px] border-gray-400 rounded-md flex items-center justify-center gap-2"
+          >
             <FcGoogle size={24} />
             Register With Google{" "}
-          </button>
-          <button className="w-full py-4 border-[1px] border-gray-400 rounded-md flex items-center justify-center gap-2">
+          </a>
+          <a className="w-full py-4 border-[1px] border-gray-400 rounded-md flex items-center justify-center gap-2">
             <SiFacebook size={24} />
             Register With Facebook{" "}
-          </button>
+          </a>
         </div>
         <h3 className="text-center mt-8 pb-10">
           Already a Space Buddy?{" "}

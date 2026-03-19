@@ -10,7 +10,7 @@ import SideView from "./component/SideView";
 
 const page = () => {
   return (
-    <section className="md:flex items-top md:pl-4 py-2 h-screen">
+    <section className="mainpage">
       <SideView />
       {/* sign in form */}
       <div className="w-full flex justify-center items-center md:hidden">

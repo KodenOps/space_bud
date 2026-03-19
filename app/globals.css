@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+.mainpage {
+  @apply md:flex items-start md:pl-4 py-2 h-screen;
+}
+.mainpage_home {
+  @apply md:flex items-start   h-screen;
+}
 nav li a {
   @apply text-gray-600 hover:text-blue-800 transition-colors duration-300;
 }
@@ -18,10 +24,19 @@ form button {
   @apply bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-300 cursor-pointer;
 }
 
-.buttonSocial button {
+.buttonSocial a {
   @apply bg-gray-200 text-gray-700 font-bold  px-2 rounded hover:bg-gray-300 transition-colors duration-300 cursor-pointer w-full items-center justify-center gap-2;
 }
 
 form label {
   @apply text-sm font-medium text-[#0E2F5E] md:block hidden;
+}
+.top .daysTogether {
+  @apply md:p-4 p-2 text-center flex flex-col justify-center items-center mb-4 h-full bg-white  shadow-sm hover:translate-y-[-10px] duration-500 rounded-md cursor-pointer md:w-auto w-[50%];
+}
+.daysTogether .headers {
+  @apply md:text-4xl text-xl font-bold text-[#0D2C5D];
+}
+.top .daysTogether p {
+  @apply text-center;
 }
