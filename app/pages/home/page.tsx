@@ -55,9 +55,12 @@ const Page = () => {
               alt="mylove_image"
               className="w-full h-full object-cover "
             />
-            <p className="absolute text-xl font-bold bg-[#0D2C5D99] h-full w-full flex items-center justify-center text-white ">
-              Image of the Day
-            </p>
+            <div className="absolute text-xl font-bold bg-[#0D2C5D99] h-full w-full flex flex-col items-center justify-center text-white ">
+              <p className="top-0">Image of the Day</p>
+            </div>
+            <button className="absolute md:bottom-2 bottom-6 px-2 rounded-full md:w-[90%] md:text-sm w-[80%] border-2 border-white md:py-2 py-4 bg-[#0D2C5D] z-100 text-white font-bold">
+              Download Fine Shii
+            </button>
           </div>
 
           <div className="daysTogether ">
