@@ -21,7 +21,7 @@ const ReviewBar = () => {
         />
         <div className="names text-md">
           <h4 className="text-white font-bold">{randomReview.name}</h4>
-          <p className="text-[#6AF1F1] text-sm">{randomReview.role}</p>
+          <p className="text-[#E9F0BC] text-sm">{randomReview.role}</p>
         </div>
       </div>
     </div>
