@@ -99,7 +99,7 @@ const Page = () => {
         </div>
         {/* sdfg */}
         {/* Goals Section */}
-        <Title title="My Menu" />
+        <Title title="Our Menu" />
         <div className="mymenu md:flex gap-4 flex-1 flex-wrap">
           <div className="goalOverview p-4 flex-1 shadow-sm">
             <h3 className="text-md font-medium text-[#0D2C5D] ">
