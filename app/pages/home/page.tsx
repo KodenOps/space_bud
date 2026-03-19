@@ -20,7 +20,7 @@ const Page = () => {
   // ✅ Independent goals state
   const [goals, setGoals] = useState<Goal[]>([
     { name: "Squat", value: 80 },
-    { name: "Run", value: 20 },
+    { name: "Run", value: 60 },
     { name: "Pushup", value: 8 },
   ]);
 
