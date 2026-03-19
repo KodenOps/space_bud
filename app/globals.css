@@ -38,5 +38,5 @@ form label {
   @apply md:text-4xl text-xl font-bold text-[#0D2C5D];
 }
 .top .daysTogether p {
-  @apply text-center;
+  @apply text-center text-sm;
 }
